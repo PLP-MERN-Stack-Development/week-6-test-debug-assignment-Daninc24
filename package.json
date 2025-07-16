@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:client": "cd client && npm test",
+    "test:server": "cd server && npm test"
+  },
+  "devDependencies": {
+    "jest-environment-jsdom": "^30.0.4"
+  }
+}

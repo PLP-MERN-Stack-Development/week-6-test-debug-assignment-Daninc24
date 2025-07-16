@@ -69,6 +69,63 @@ mern-testing/
 - Cypress/Playwright: End-to-end testing framework
 - MongoDB Memory Server: In-memory MongoDB for testing
 
+## 🧪 How to Run Tests
+
+### 1. Install Dependencies
+
+In the project root, run:
+```
+npm install
+```
+Then, install dependencies in both client and server:
+```
+cd client && npm install
+cd ../server && npm install
+```
+
+### 2. Unit & Integration Tests
+
+#### Run all tests from the root:
+```
+npm test
+```
+
+#### Run client tests only:
+```
+cd client
+npm test
+```
+
+#### Run server tests only:
+```
+cd server
+npm test
+```
+
+#### Run with coverage:
+```
+npm test -- --coverage
+```
+
+### 3. End-to-End (E2E) Tests with Cypress
+
+#### Open Cypress UI:
+```
+cd client
+npx cypress open
+```
+
+#### Run Cypress tests headlessly:
+```
+cd client
+npx cypress run
+```
+
+### 4. Notes
+- Make sure your development server is running for E2E tests (e.g., `npm start` in client/server as needed).
+- For integration tests, a test database will be used automatically (see `.env.test`).
+- Coverage reports will be generated in the `coverage/` directory.
+
 ## Submission
 
 Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:

@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+client/coverage/
+server/coverage/
+
+# Cypress
+client/cypress/videos/
+client/cypress/screenshots/
+client/cypress/downloads/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+server/.env.test
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Misc
+*.local
+*.cache
+*.log 
